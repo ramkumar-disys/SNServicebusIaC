@@ -61,6 +61,6 @@ resource "azurerm_function_app" "function_app" {
   storage_account_access_key = azurerm_storage_account.stracc.primary_access_key
 
   app_settings = {          
-    "ServicenowAzureWebJobsServiceBus"   = "%SB_CONN_STRING%"
+    "ServicenowAzureWebJobsServiceBus"   = "Endpoint=sb://servicenow-servicebus.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=URrgi00qVMvW07dXwlxmTaBBOy1RQeSvi+ASbMgJWs8="
   }
 }
